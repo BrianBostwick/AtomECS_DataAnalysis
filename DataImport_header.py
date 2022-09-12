@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 def get_coordinates(dat):
     """
     """
-
     x, y, z = "","",""
     coordinates = np.zeros(3)
     location = []

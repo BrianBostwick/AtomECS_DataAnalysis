@@ -49,7 +49,7 @@ def get_particle_data( file ):
             for i in range(ParticleNumber_tmp):
                 PositionData = myfile.readline()
                 ParticleID.append(PositionData[ PositionData.index(',')+1: PositionData.index(':') ])
-                ParticleLocation_tmp.append(get_coordinates(PositionData[ PositionData.index(' ')+1: PositionData.index('\n') ]))
+                ParticleLocation_tmp.append(get_coordinates(PositionData[ PositionData.index(' ')+1:    PositionData.index('\n') ]))
 
             Step.append(Step_tmp)
             ParticleNumber.append(ParticleNumber_tmp)
